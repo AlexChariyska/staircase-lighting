@@ -4,10 +4,9 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: 'chariyski/configurations/es6',
   rules: {
     'no-unused-vars': [2, {'vars': 'all', 'args': 'none'}],
-    "require-jsdoc": 0, // TODO remove
+    "require-jsdoc": 0, 
   },
   'globals': {
     Promise: true

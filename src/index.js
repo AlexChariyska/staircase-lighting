@@ -12,20 +12,20 @@ class StaircaseLighting {
   constructor(options) {
     Object.assign(this, staircaseModel, options);
 
-    this._initBoard();
+    //this._initBoard();
 
-    // Strip mock for developing without hardware
-    // this.strip = {
-    //   color() {
-    //   },
-    //   pixel() {
-    //     return this;
-    //   },
-    //   show() {
-    //   },
-    //   off() {
-    //   }
-    // };
+   //Strip mock for developing without hardware
+   this.strip = {
+     color() {
+     },
+     pixel() {
+       return this;
+     },
+     show() {
+     },
+     off() {
+     }
+   };
   }
 
   get allPixels() {
@@ -76,6 +76,16 @@ class StaircaseLighting {
 
   set direction(direction) {
     this._direction = direction;
+
+    return this;
+  }
+
+  get directions() {
+    return this._directions.slice();
+  }
+
+  set directions(animationMode) {
+    this._directions = directions;
 
     return this;
   }

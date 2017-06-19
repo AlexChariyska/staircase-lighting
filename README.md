@@ -1,8 +1,5 @@
 # Staircase lighting with ws2811 led strip.
 
-## Demo
-Coming soon
-
 ## How to use it
 - download the repo
 - edit src/models/staircase.js according your stairs and preferences
